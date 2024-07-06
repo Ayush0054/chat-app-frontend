@@ -30,7 +30,6 @@ function Page() {
           password: password,
         }
       );
-      console.log(response.data);
 
       const token = response.data.jwt;
       cookies.set("access-token", token);
